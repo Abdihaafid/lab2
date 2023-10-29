@@ -1,0 +1,12 @@
+﻿@model IEnumerable<string> // Assuming your ViewComponent model is a collection of link names
+
+<div class="left-navigation">
+    <ul class="nav">
+        @foreach (var link in Model)
+        {
+            <li class="nav-item">
+                <a class="nav-link" href="@Url.Action(link)">@link</a>
+            </li>
+        }
+    </ul>
+</div>

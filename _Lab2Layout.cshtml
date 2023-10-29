@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <h1>
+        HASHI-WEB
+    </h1>
+
+    <div class="container">
+        @await Component.InvokeAsync("LeftNavigation", new { layout = ViewBag.Layout })
+
+
+        @RenderBody()
+    </div>
+
+    <footer>
+        <p></p>
+    </footer>
+</body>
+</html>
